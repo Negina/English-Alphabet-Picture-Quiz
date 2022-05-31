@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <title>Picture Game</title>
+</head>
+
+<body onload="getHomeMenu()">
+    <h1>Academy Stars Starter Alphabet Quiz</h1>
+    <div class="menu">
+        <div class="score"></div>
+        <div class="unit" onclick="init()">Unit 1: A, B, C</div>
+    </div>
+    <div class="container">
+        <h2>IS THIS</h2>
+        <div class="audio"></div>
+        <div class="quest-container">
+            <div class="q0-1">
+                <div class="image quest q0" onclick="checkAnswer(0)"></div>
+                <div class="image quest q1" onclick="checkAnswer(1)"></div>
+            </div>
+            <div class="q2-3">
+                <div class="image quest q2" onclick="checkAnswer(2)"></div>
+                <div class="image quest q3" onclick="checkAnswer(3)"></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
